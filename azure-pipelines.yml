@@ -10,6 +10,10 @@ pool:
   Name: 'Default'
 
 steps:
+- task: CredScan@2
+  inputs:
+    toolMajorVersion: 'V1'
+    outputFormat: 'csv'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
