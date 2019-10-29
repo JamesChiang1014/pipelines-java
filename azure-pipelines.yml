@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  Name: 'Default'
+  Name: 'windows-latest'
 
 steps:
 - task: CredScan@2
